@@ -1,0 +1,45 @@
+<template>
+    <div class="slds-grid">
+        <div class="slds-col" style="height: 150px;">
+            <div style="position: relative; width: 100%; height: 100%;">
+                <div style="height: 100%; position: relative;">
+                    <div
+                        class="slds-table_header-fixed_container slds-scrollable_x"
+                        style="height: 100%;"
+                    >
+                        <div class="slds-scrollable_y" style="width: 1300px;">
+                            <div>
+                                <table
+                                    aria-multiselectable="true"
+                                    class="slds-table  slds-table_header-fixed slds-table_bordered slds-table_resizable-cols form-embedded-table"
+                                    style="table-layout: fixed;"
+                                    role="grid"
+                                >
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <th
+                                                scope="col"
+                                                tabindex="-1"
+                                                aria-label="element"
+                                                class="slds-is-resizable slds-is-sortable"
+                                            >
+                                                element
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <slot></slot>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

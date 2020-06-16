@@ -5,6 +5,11 @@
         <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>LEALA_Custom_Base_Components</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
     <classAccesses>
         <apexClass>GetAccountId</apexClass>
         <enabled>true</enabled>
@@ -20,6 +25,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Input_Output</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LEALA_Custom_Input_Output</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

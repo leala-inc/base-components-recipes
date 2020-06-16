@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>LEALA_logoT_Blue</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>LEALA Custom Base Components</label>
+    <navType>Standard</navType>
+    <tabs>LEALA_Custom_Input_Output</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>LEALA_Custom_Base_Components_UtilityBar</utilityBar>
+</CustomApplication>
