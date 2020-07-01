@@ -21,6 +21,7 @@ import {
     normalizeString,
     synchronizeAttrs
 } from 'c/utilsPrivate';
+import { startPositioning, stopPositioning } from 'c/positionLibrary';
 
 import { VARIANT } from 'c/inputUtils';
 
@@ -72,6 +73,7 @@ export default class fixedBaseCombobox extends LightningElement {
     _inputDescribedBy = [];
     _inputAriaControls;
     _activeElementDomId;
+    _autoPositioning;
 
     constructor() {
         super();
@@ -641,6 +643,8 @@ export default class fixedBaseCombobox extends LightningElement {
 
         this._dropdownVisible = true;
 
+        this.startAutoPositioning();
+
         this.highlightDefaultItem();
 
         this._events.dispatchDropdownOpen();
@@ -650,7 +654,7 @@ export default class fixedBaseCombobox extends LightningElement {
         if (!this._dropdownVisible) {
             return;
         }
-
+        this.stopAutoPositioning();
         this.removeHighlight();
         this._dropdownVisible = false;
     }
@@ -726,6 +730,21 @@ export default class fixedBaseCombobox extends LightningElement {
             }
             return this.processItem(item);
         });
+    }
+
+    startAutoPositioning() {
+        //
+        this._autoPositioning = startPositioning(this, {
+            type: 'dropdown',
+            input: this.template.querySelector('input'),
+            dropdown: this.template.querySelector('[data-dropdown-element]')
+        });
+    }
+
+    stopAutoPositioning() {
+        //
+        stopPositioning(this._autoPositioning);
+        this._autoPositioning = undefined;
     }
 
     highlightDefaultItem() {

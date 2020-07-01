@@ -102,6 +102,7 @@
             onmouseup={handleDropdownMouseUp}
             onmouseleave={handleDropdownMouseLeave}
             onclick={handleOptionClick}
+            style="position: fixed;"
         >
             <template if:true={_hasDropdownOpened}>
                 <template for:each={_items} for:item="item">
