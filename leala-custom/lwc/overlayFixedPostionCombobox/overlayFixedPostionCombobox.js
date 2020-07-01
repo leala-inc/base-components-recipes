@@ -3,11 +3,11 @@ import { LightningElement } from 'lwc';
 export default class OverlayFixedPostionCombobox extends LightningElement {
     get options() {
         return [
-            { label: 'A', value: 'a' },
-            { label: 'B', value: 'b' },
-            { label: 'C', value: 'c' },
-            { label: 'D', value: 'd' },
-            { label: 'E', value: 'e' }
+            { label: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', value: 'a' },
+            { label: 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB', value: 'b' },
+            { label: 'CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC', value: 'c' },
+            { label: 'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD', value: 'd' },
+            { label: 'EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE', value: 'e' }
         ];
     }
 }

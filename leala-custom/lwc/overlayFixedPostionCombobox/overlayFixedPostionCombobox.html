@@ -1,11 +1,20 @@
 <template>
     <c-overlay-element>
-        <div style="height: 80px;">
-            <c-fixed-combobox
-                name="fixed"
-                label="fixed"
-                options={options}
-            ></c-fixed-combobox>
+        <div class="slds-grid slds-grid_align-spread">
+            <div class="slds-col" style="height: 80px; width: 200px;">
+                <c-fixed-combobox
+                    name="fixed"
+                    label="fixed"
+                    options={options}
+                ></c-fixed-combobox>
+            </div>
+            <div class="slds-col" style="height: 80px; width: 200px;">
+                <c-fixed-combobox
+                    name="fixed"
+                    label="fixed"
+                    options={options}
+                ></c-fixed-combobox>
+            </div>
         </div>
     </c-overlay-element>
 </template>
